@@ -20,7 +20,7 @@ def search(array, target):
 m = int(input())
 blist = list(map(int, input().split()))
 for b in blist:
-    if search(alist, b) == None:
+    if search(alist, b) is None:
         print(0)
     else:
         print(1)
