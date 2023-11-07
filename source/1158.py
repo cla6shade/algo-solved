@@ -10,7 +10,7 @@ for i in range(n):
     perm.append(ns.pop(nextIndex))
     nextIndex += k - 1
 
-jsphus = ', '.join(list(map(str, perm)))
-jsphus = '<' + jsphus.strip() + '>'
-print(jsphus)
+ysputhString = ', '.join(list(map(str, perm)))
+ysputhString = '<' + ysputhString.strip() + '>'
+print(ysputhString)
 
