@@ -1,6 +1,8 @@
 # 코딩테스트 대비 메모
 
 ## 자주 쓰이는 구문들
+
+### input 처리
 ```python
 n = int(input()) # 하나의 수가 주어지는 경우
 mlist = list(map(int, input().split())) # 1차원 숫자 배열 입력받기
@@ -10,6 +12,23 @@ lsquare = [list(map(int, input())) for _ in range(n)]
 
 # 띄어쓰기가 있고 2차원 배열로 변환하여야 하는 경우
 l2square = [list(map(int, input().split())) for _ in range(n)]
+```
+### string 처리
+```python
+b = ['a', 'b', 'a', 's', 'd']
+
+# string array를 쉼표로 join
+c = ','.join(b)
+```
+
+## 헷갈리는 것들
+```python
+# 딕셔너리 순회 시, k에는 키값이 들어간다.
+for k in {'a': 1, 'b': 2, 'c': 3}:
+    print(k)
+# 리스트 순회 시 v에는 인덱스에 대응하는 value가 들어간다.
+for v in ['a', 'b', 'c']:
+    print(v)
 ```
 
 ## 정렬
