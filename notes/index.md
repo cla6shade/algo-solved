@@ -73,3 +73,36 @@ def binary_search(array, target, start, end):
             start = mid + 1
     return None
 ```
+
+## 그래프 탐색
+
+아래의 그래프 탐색 알고리즘들은 graph라는 변수가 [노드 번호=>[연결된 노드]] 형태로 초기화되어 있음을 가정한다.
+
+### BFS
+너비 우선 탐색, queue 사용. 당연하겠지만 visited는 사용하기 전에 node 개수만큼 초기화해야함.
+```python
+from collections import deque
+def dfs(graph, node, visited):
+    queue = deque([node])
+    visited[node] = True
+    while queue:
+        v = queue.popleft()
+        print(v, end=' ')
+        for i in graph[v]:
+            if not visited[i]:
+                queue.append(i)
+                visited[i] = True
+```
+
+### DFS
+깊이 우선 탐색, 재귀함수 사용
+
+```python
+def dfs(graph, node, visited):
+    if not visited[node]:
+        print(node, end=' ')
+        visited[node] = True
+        for v in graph[node]:
+            dfs(graph, v, visited)
+```
+    
