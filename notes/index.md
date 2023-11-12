@@ -105,4 +105,6 @@ def dfs(graph, node, visited):
         for v in graph[node]:
             dfs(graph, v, visited)
 ```
-    
+
+## DP
+DP는 n항을 n항 이전의 항을 이용하여 어떻게 채울 지를 생각 해야 한다.
