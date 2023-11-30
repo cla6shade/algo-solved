@@ -108,3 +108,19 @@ def dfs(graph, node, visited):
 
 ## DP
 DP는 n항을 n항 이전의 항을 이용하여 어떻게 채울 지를 생각 해야 한다.
+
+## 순열과 조합
+permutations 모듈은 순열, combinations 모듈은 조합이다. 메소드 사용법은
+`permutations(int[], int[]|int)`, `combinations(int[], int[]|int)` 이다.
+```python
+from itertools import combinations, permutations
+```
+
+## !!! 주의해야 할 점
+### 숫자의 범위를 잘 보자
+숫자의 대소관계나 범위에 따라 결과값이 달라지는 경우가 많다.
+문제를 잘 읽고 처음부터 범위를 잘 보자.
+
+### indexing
+dp에서 특히 인덱싱에서 문제점이 발생할 때가 많았던 것 같다.
+인덱스가 array를 넘어가지 않도록 잘 하자.
