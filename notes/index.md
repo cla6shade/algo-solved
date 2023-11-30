@@ -108,6 +108,7 @@ def dfs(graph, node, visited):
 
 ## DP
 DP는 n항을 n항 이전의 항을 이용하여 어떻게 채울 지를 생각 해야 한다.
+그리고 DP table에는 구하려는 개수나, 그 답을 만들 수 있는 경우로 채워야 한다.
 
 ## 순열과 조합
 permutations 모듈은 순열, combinations 모듈은 조합이다. 메소드 사용법은
